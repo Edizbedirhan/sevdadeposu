@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesajınız Var</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="envelope-scene">
+        <div class="envelope" onclick="acMesaj()">
+            <div class="flap"></div>
+            <div class="paper">
+                <p class="content" id="content" data-text='💖YENİ BİR MESAJIN VAR!💖
+                Çölde akşam olunca çıkan fırtına gibi soğuktur özlemek 
+                Ve sabah olunca açan güneş kadar sıcaktır seni sevmek.
+                Her gece yıldızlara bakıyorum, çünkü aynı gökyüzü altında olduğumuzu bilmek, 
+                aramızdaki mesafeyi biraz olsun hafifletiyor.
+                Sen, şimdiye kadar yazılmış en güzel şiir, şimdiye kadar söylenmiş en güzel şarkı gibisin bebeğim. 
+                İster yakında ol ister uzakta fark etmez; ben o şarkıyı dinler, o şiiri okurum meleğim…
+                Günler, haftalar, aylar geçsin..
+                Sana sarıldığımda tüm bu bekleyişin değdiğini göreceksin.
+
+                SENİN İÇİN ÖLEBİLİR MİYİM?"'></p>
+
+                <div class="buttons gizli" id="cevaplar">
+                    <button onclick="cevapVer(true)">EVET</button>
+                    <button onclick="cevapVer(false)">HAYIR</button>
+                </div>
+
+                <p id="sonuc"></p>
+            </div>
+        </div>
+        <p class="click-text">💌 Mektuba tıkla</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
